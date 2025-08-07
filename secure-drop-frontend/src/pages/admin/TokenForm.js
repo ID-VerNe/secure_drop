@@ -80,7 +80,7 @@ const TokenForm = ({ visible, onCancel, onSuccess, token }) => {
         await apiClient.put(`/admin/tokens/${token.id}`, payload);
         message.success('令牌更新成功');
       } else {
-        await apiClient.post('/admin/tokens/', payload);
+        await apiClient.post('/admin/tokens', payload);
         message.success('令牌创建成功');
       }
       onSuccess();

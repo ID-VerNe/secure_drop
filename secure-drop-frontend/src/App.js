@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import { ConfigProvider, theme } from 'antd';
 import AdminLayout from './pages/admin/AdminLayout';
 import AdminLogin from './pages/admin/AdminLogin';
+import AdminRedirect from './pages/admin/AdminRedirect';
 import GuestLogin from './pages/guest/GuestLogin';
 import FileExchange from './pages/guest/FileExchange';
 
@@ -33,6 +34,7 @@ function App() {
           <Route path="/guest/exchange" element={<FileExchange />} />
 
           {/* 管理员路由 */}
+          <Route path="/admin" element={<AdminRedirect />} />
           <Route path="/admin/login" element={<AdminLogin />} />
           <Route 
             path="/admin/*" 
