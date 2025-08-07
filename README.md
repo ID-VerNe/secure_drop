@@ -39,8 +39,8 @@ SecureDrop 是一个高度安全、策略可控的文件交换平台。管理员
 
 1.  **克隆仓库**:
     ```bash
-    git clone <your-repository-url>
-    cd <repository-folder>
+    git clone https://github.com/ID-VerNe/secure_drop.git
+    cd secure_drop
     ```
 
 2.  **后端设置**:
